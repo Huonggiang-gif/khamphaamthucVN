@@ -1,0 +1,69 @@
+
+.content {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* (4) Tiêu đề */
+header {
+  background-color: #f2d5f2DA;
+  padding: 20px;
+}
+
+
+nav {
+  background-color: #C4E2E4;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block; /* bắt buộc */
+  width: 120px;          /* bắt buộc */
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+main {
+  background-color: #BFBFE3;
+  font-size: 18px;
+  padding: 20px;
+  min-height: 250px;
+}
+
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+
+h1 {
+  text-align: center;
+  font-family: Georgia, serif;
+  color: yellow;
+}
+
+/* (9) p */
+p {
+  line-height: 1.6;
+}
