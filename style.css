@@ -1,17 +1,9 @@
-
 .content {
   font-family: Arial, sans-serif;
   font-size: 16px;
   margin: 10px 0;
   color: #333;
 }
-
-
-header {
-  background-color: #f2d5f2DA;
-  padding: 20px;
-}
-
 
 nav {
   background-color: #C4E2E4;
@@ -25,8 +17,8 @@ nav ul {
 }
 
 nav li {
-  display: inline-block; /* bắt buộc */
-  width: 120px;          /* bắt buộc */
+  display: inline-block; 
+  width: 120px;          
   text-align: center;
 }
 
@@ -40,14 +32,12 @@ nav a:hover {
   text-decoration: underline;
 }
 
-
 main {
   background-color: #BFBFE3;
   font-size: 18px;
   padding: 20px;
   min-height: 250px;
 }
-
 
 footer {
   background-color: #222;
@@ -56,14 +46,32 @@ footer {
   padding: 15px;
 }
 
-
 h1 {
   text-align: center;
   font-family: Georgia, serif;
   color: rgb(6, 6, 3);
 }
 
-
 p {
   line-height: 1.6;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 cột đều nhau */
+  gap: 20px;                      /* khoảng cách giữa các cột/hàng */
+  margin-top: 20px;
+}
+
+.grid div {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
 }
