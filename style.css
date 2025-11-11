@@ -1,77 +1,117 @@
-.content {
+body {
   font-family: Arial, sans-serif;
-  font-size: 16px;
-  margin: 10px 0;
+  margin: 0;
+  padding: 0;
+  background: #fffdf7;
   color: #333;
 }
 
+header {
+  background-color: #e63946;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
 nav {
-  background-color: #C4E2E4;
-  padding: 10px;
+  background-color: #f1faee;
+  padding: 10px 0;
 }
 
 nav ul {
-  list-style-type: none;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
   margin: 0;
   padding: 0;
 }
 
-nav li {
-  display: inline-block; 
-  width: 120px;          
-  text-align: center;
-}
-
 nav a {
-  color: white;
   text-decoration: none;
+  color: #1d3557;
   font-weight: bold;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #e63946;
 }
 
 main {
-  background-color: #BFBFE3;
-  font-size: 18px;
   padding: 20px;
-  min-height: 250px;
 }
 
-footer {
-  background-color: #222;
-  color: white;
+h2 {
+  color: #1d3557;
   text-align: center;
-  padding: 15px;
 }
 
-h1 {
-  text-align: center;
-  font-family: Georgia, serif;
-  color: rgb(6, 6, 3);
-}
-
-p {
-  line-height: 1.6;
-}
 .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 cột đều nhau */
-  gap: 20px;                      /* khoảng cách giữa các cột/hàng */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   margin-top: 20px;
 }
 
 .grid div {
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
   text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.grid div:hover {
+  transform: scale(1.02);
 }
 
 .grid img {
   width: 100%;
-  border-radius: 8px;
-  margin-top: 10px;
+  height: auto;
+  display: block;
 }
+
+h3 {
+  margin: 10px 0;
+  color: #457b9d;
+}
+
+footer {
+  text-align: center;
+  background-color: #1d3557;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 772px) and (max-width: 997px) {
+  .grid {
+    justify-content: space-around;
+  }
+
+  .grid div {
+    width: 45%;
+  }
+
+  .grid img {
+    height: 30vh; 
+    object-fit: cover;
+  }
+}
+
+
+@media screen and (min-width: 998px) {
+  .grid {
+    justify-content: space-between;
+  }
+
+  .grid div {
+    width: 30%;
+  }
+}
+
